@@ -6,10 +6,19 @@ body {
     color: #060302;
     margin: 0;
     padding: 0;
+    display: flex; /* Añade display flex */
+    flex-direction: column; /* Añade flex-direction column */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del viewport height */
   }
   
   h1, h2, h3 {
     color: #DA9455;
+  }
+
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   
   /* Estilos para el header */
@@ -18,6 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    width: 100%;
     background-color: #592619; /* Añade el color de fondo al header */
   }
   
@@ -47,6 +57,7 @@ body {
   /* Estilos para el main */
   main {
     padding: 2rem;
+    flex: 1; /* Añade flex: 1 para que main ocupe el espacio disponible */
   }
   
   .grid {
@@ -108,10 +119,35 @@ body {
   
   /* Estilos para el footer */
   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 1rem 2rem;
+    width: 100%;
     background-color: #592619; /* Añade el color de fondo al footer */
-    color: #DA9455; /* Cambia el color de texto del footer */
-    text-align: center;
-    padding: 1rem 0;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  footer nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  footer nav ul li a {
+    text-decoration: none;
+    color: #DA9455; /* Cambia el color de texto de los enlaces del footer */
+  }
+  
+  footer nav ul li a:hover {
+    text-decoration: underline;
   }
   
   /* Estilos responsive */
