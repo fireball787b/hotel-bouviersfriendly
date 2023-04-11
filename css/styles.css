@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #EEE0D0;
+    color: #060302;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #DA9455;
+  }
+  
+  /* Estilos para el header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #592619; /* Añade el color de fondo al header */
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #DA9455; /* Cambia el color de texto de los enlaces del header */
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para el main */
+  main {
+    padding: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .amenity {
+    text-align: center;
+  }
+  
+  .amenity i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilos para la sección de servicios */
+  .services {
+    margin-bottom: 2rem;
+  }
+  
+  .service-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .service-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .service-img {
+    flex: 1;
+  }
+  
+  .service-img img {
+    width: 40%;
+    height: auto;
+  }
+  
+  .service-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    background-color: #592619; /* Añade el color de fondo al footer */
+    color: #DA9455; /* Cambia el color de texto del footer */
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .amenities-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .service-row {
+      flex-direction: column;
+    }
+  }
+  
